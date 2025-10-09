@@ -1,0 +1,33 @@
+<mvc:View controllerName="bookapp.controller.ViewBook"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Table id="booksTable"
+             items="{/BookSet}"   
+            >
+            <headerToolbar>
+                <Toolbar>
+                    <Title text="Book List" />
+                </Toolbar>
+            </headerToolbar>
+            <columns>
+                <Column>
+                    <Text text="Title" />
+                </Column>
+                <Column>
+                    <Text text="Description" />
+                </Column>                   
+            </columns>
+            <items>
+                <ColumnListItem>
+                <cells>
+                    <Text text="{title}" />
+                    <Text text="{description}" />                        
+                </cells>
+                </ColumnListItem>
+            </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

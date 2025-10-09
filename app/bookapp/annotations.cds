@@ -1,0 +1,1 @@
+using isbncsrService as service from '../../srv/service';

@@ -1,0 +1,28 @@
+{
+   "[development]": {
+    "auth": {
+      "kind": "mocked",
+      "users": {
+        "alex.aguilar@sap.com": {
+          "password": "123",
+          "roles": [
+            "admin",
+            "externalapp"
+          ]
+        },
+        "alice": {
+          "roles": [
+            "admin",
+            "externalapp"
+          ]
+        },
+        "bob": {
+          "roles": [
+            "admin",
+            "externalapp"
+          ]
+        }
+      }
+    }
+  }
+}
